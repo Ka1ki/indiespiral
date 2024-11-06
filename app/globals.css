@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.swiper-button-next,
+.swiper-button-prev {
+  /* color: black !important; */
+  @apply text-primary !important;
+}
+
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
+
+body {
+  @apply text-neutral-600;
+}
+
+.contact-gradient {
+  background: rgb(40, 176, 161);
+  background: linear-gradient(
+    100deg,
+    rgba(40, 176, 161, 1) 0%,
+    rgba(80, 187, 182, 0.5312718837535014) 17%,
+    rgba(255, 255, 255, 1) 41%
+  );
+}
