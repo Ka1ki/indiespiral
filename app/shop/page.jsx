@@ -130,7 +130,13 @@ function Hero({ hero }) {
   // image = "/hero4.png";
   return (
     <div className="my-10">
-      <h1 className="text-6xl font-tangerine text-center text-primary">Shop</h1>
+      <h1 className="text-6xl font-tangerine text-center mb-2">Scarves</h1>
+
+      <p className="max-w-2xl mx-auto px-3 text-center">
+        your new favorite accessory :) tie together your look with a scarf from
+        swells! all scarves are made to order and typically take around two
+        weeks.
+      </p>
     </div>
   );
 }
