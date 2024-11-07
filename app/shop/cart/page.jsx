@@ -124,7 +124,7 @@ export default function CartPage() {
 
               <button
                 onClick={completeOrder}
-                className="w-full px-6 py-4 text-lg font-medium text-white transition-colors duration-200 bg-blue-600 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                className="btn btn-primary w-full rounded-lg shadow-md h-14"
               >
                 Place Order
               </button>
