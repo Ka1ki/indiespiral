@@ -15,7 +15,7 @@ import {
 
 export default function ContactPage() {
   return (
-    <div className="min-h-screen pb-4 bg-base-200 mt-14">
+    <div className="min-h-screen pb-4 bg-base-200">
       <div className="py-8 hero bg-base-100 sm:py-12">
         <div className="text-center hero-content">
           <div className="max-w-md px-4">
