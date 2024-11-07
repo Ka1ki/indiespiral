@@ -88,17 +88,17 @@ function Navbar() {
             <Link href="/" className="font-medium ">
               Home
             </Link>
+            <Link href="/shop" className=" whitespace-nowrap">
+              Browse
+            </Link>
             <Link href="/about" className="">
               About
             </Link>
-            <Link href="/courses" className="">
-              Courses
+            <Link href="/collections" className="">
+              Collections
             </Link>
-            <Link href="/shop" className=" whitespace-nowrap">
-              E-books & Prints
-            </Link>
-            <Link href="/blogs" className="">
-              Blogs
+            <Link href="/contact" className="">
+              Contact
             </Link>
           </div>
 

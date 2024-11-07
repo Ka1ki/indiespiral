@@ -35,7 +35,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" data-theme="corporate">
       <body
-        className={`${montserrat.variable} ${tangerine.variable} ${syne.variable} font-sans bg-neutral-50`}
+        className={`${montserrat.variable} ${tangerine.variable} ${syne.variable} font-sans bg-neutral-100`}
       >
         <ToastContainer
           position="top-right"

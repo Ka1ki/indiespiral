@@ -161,7 +161,7 @@ const SearchFilter = ({ shopVariants, categories = [] }) => {
   };
 
   return (
-    <div className="w-64 bg-transparent">
+    <div className="w-96 bg-white p-5">
       <div className="px-2 pb-4">
         <div className="flex justify-between items-center">
           <h2 className="text-xl text-base-content">Filters</h2>

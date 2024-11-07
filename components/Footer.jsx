@@ -2,7 +2,7 @@
 import Link from "next/link";
 function Footer() {
   return (
-    <footer className="p-10 bg-neutral-900 footer footer-center text-base-content">
+    <footer className="p-10 bg-primary text-white footer footer-center text-base-content">
       <nav>
         <div className="flex items-center justify-center gap-4 text-white">
           <a>

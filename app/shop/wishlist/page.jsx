@@ -49,7 +49,7 @@ const WishlistPage = () => {
 
   if (wishlist.isError) {
     return (
-      <div className="container mx-auto px-4 py-24">
+      <div className="container mx-auto px-4">
         <div className="alert alert-error">
           <svg
             xmlns="http://www.w3.org/2000/svg"
