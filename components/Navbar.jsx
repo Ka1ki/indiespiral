@@ -113,9 +113,9 @@ function Navbar() {
             <Link href="/cart" className="btn btn-ghost btn-circle indicator">
               <ShoppingBag className="h-5 w-5" />
             </Link>
-            <button className="btn btn-ghost btn-circle">
+            <Link href="/account" className="btn btn-ghost btn-circle">
               <CircleUserRound className="h-5 w-5" />
-            </button>
+            </Link>
           </div>
         </div>
       </div>
