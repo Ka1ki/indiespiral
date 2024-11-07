@@ -33,7 +33,7 @@ export default function ContactPage() {
       <div className="container px-4 py-8 mx-auto sm:py-12">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
           <div className="space-y-8">
-            <div className="shadow-xl card bg-base-100">
+            <div className="shadow card bg-base-100">
               <div className="p-6 card-body sm:p-8">
                 <h2 className="mb-2 text-xl card-title sm:text-2xl sm:mb-4">
                   About Us
@@ -46,7 +46,7 @@ export default function ContactPage() {
               </div>
             </div>
 
-            <div className="shadow-xl card bg-base-100">
+            <div className="shadow card bg-base-100">
               <div className="p-6 card-body sm:p-8">
                 <h2 className="mb-2 text-xl card-title sm:text-2xl sm:mb-4">
                   Contact Information
@@ -68,7 +68,7 @@ export default function ContactPage() {
               </div>
             </div>
 
-            <div className="shadow-xl card bg-base-100">
+            <div className="shadow card bg-base-100">
               <div className="p-6 card-body sm:p-8">
                 <h2 className="mb-2 text-xl card-title sm:text-2xl sm:mb-4">
                   Follow Us
@@ -103,7 +103,7 @@ export default function ContactPage() {
             </div>
           </div>
 
-          <div className="shadow-xl card bg-base-100">
+          <div className="shadow card bg-base-100">
             <div className="p-6 card-body sm:p-8">
               <h2 className="mb-2 text-xl card-title sm:text-2xl sm:mb-4">
                 Send Us a Message
