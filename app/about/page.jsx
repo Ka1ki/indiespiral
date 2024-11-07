@@ -1,22 +1,19 @@
-import { title } from "process";
-
 const AboutUs = () => {
   return (
     <div>
-      <h1 className="text-center text-6xl font-tangerine py-20 text-primary">
+      <h1 className="text-center text-4xl sm:text-6xl font-tangerine py-10 sm:py-20 text-primary">
         About Us
       </h1>
-
-      <AboutUsInfo></AboutUsInfo>
-      <GridSquares></GridSquares>
+      <AboutUsInfo />
+      <GridSquares />
     </div>
   );
 };
 
-const AboutUsInfo = ({ image, description }) => {
+const AboutUsInfo = () => {
   return (
-    <div className="bg-primary/15 p-10">
-      <div className="container mx-auto grid grid-cols-2 gap-10 px-3 p-10">
+    <div className="bg-primary/15 p-5 sm:p-10">
+      <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-10 px-3">
         <div>
           <img
             src="https://placehold.co/300x300"
@@ -24,14 +21,12 @@ const AboutUsInfo = ({ image, description }) => {
             alt=""
           />
         </div>
-
-        <div className="bg-white p-10 flex flex-col items-center justify-center text-center">
+        <div className="bg-white p-5 sm:p-10 flex flex-col items-center justify-center text-center">
           <span className="font-light">About</span>
-          <h1 className="font-syne font-medium text-4xl mb-8">
+          <h1 className="font-syne font-medium text-2xl sm:text-4xl mb-5 sm:mb-8">
             Meet Indiespiral
           </h1>
-
-          <div className="text-xl space-y-5">
+          <div className="text-base sm:text-xl space-y-3 sm:space-y-5">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
               obcaecati delectus at quae! Enim commodi voluptas ut in ipsa
@@ -55,7 +50,7 @@ const GridSquares = () => {
   const gridData = [
     {
       title: "Self Taught",
-      text: "Wells uses the Adobe suite for her designs, and Google is still her professor. ",
+      text: "Wells uses the Adobe suite for her designs, and Google is still her professor.",
     },
     {
       title: "Go Dawgs",
@@ -80,13 +75,13 @@ const GridSquares = () => {
   ];
 
   return (
-    <div className="grid grid-cols-3 gap-5 py-20 container mx-auto px-3">
+    <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-5 py-10 sm:py-20 container mx-auto px-3">
       {gridData.map((item, index) => (
         <div
           key={index}
-          className={`p-5 text-center text-white bg-primary py-16 space-y-5`}
+          className={`p-3 sm:p-5 text-center text-white bg-primary py-8 sm:py-16 space-y-3 sm:space-y-5`}
         >
-          <h1 className="text-2xl">{item.title}</h1>
+          <h1 className="text-lg sm:text-2xl">{item.title}</h1>
           <p className="font-medium whitespace-pre-line">{item.text}</p>
         </div>
       ))}
