@@ -176,14 +176,14 @@ const Categories = () => {
     <div className="container mx-auto px-3 sm:px-0 grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-5">
       {[1, 2, 3, 4].map((i) => (
         <div key={i} className="cursor-pointer">
-          <div className="aspect-square">
-            <img
-              src="https://placehold.co/400x400"
-              className="object-cover w-full h-full rounded-full hover:scale-105 transition-transform"
-              alt=""
-            />
+          <div className="aspect-square rounded-full overflow-hidden">
+            <div
+              className="w-full h-full bg-cover bg-center hover:scale-110 transition-transform"
+              style={{
+                backgroundImage: `url('https://placehold.co/400x400')`,
+              }}
+            ></div>
           </div>
-
           <h1 className="text-center mt-4 sm:mt-5 text-primary font-medium text-base sm:text-xl">
             Ribbons
           </h1>
