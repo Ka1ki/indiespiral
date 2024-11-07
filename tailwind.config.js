@@ -9,9 +9,10 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["var(--font-poppins)", "sans-serif"],
+        sans: ["var(--font-montserrat)", "sans-serif"],
+        tangerine: ["var(--font-tangerine)", "cursive"],
+        syne: ["var(--font-syne)", "sans-serif"],
       },
-
       colors: {
         navy: "#0D2159",
       },
@@ -24,7 +25,8 @@ module.exports = {
       {
         corporate: {
           ...require("daisyui/src/theming/themes")["corporate"],
-          primary: "#E8B828",
+          primary: "#fc662c",
+          "primary-content": "#ffffff",
         },
       },
     ],

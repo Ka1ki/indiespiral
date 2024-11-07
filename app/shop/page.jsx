@@ -38,7 +38,7 @@ function ShopPage() {
   const variantTags = [...sizes, ...colors];
 
   const productQuery = {
-    populate: "hero",
+    populate: ["hero", "media"],
     ...(category_id && category_id !== "root" && { categories: category_id }),
     ...(searchParams.get("search") && { search: searchParams.get("search") }),
     sortBy: searchParams.get("sortBy") || "created",
@@ -129,12 +129,8 @@ function ShopPage() {
 function Hero({ hero }) {
   // image = "/hero4.png";
   return (
-    <div className="pt-20">
-      <img
-        src={hero ? hero.image : "https://placehold.co/1920x600"}
-        className="w-full"
-        alt="Hero"
-      />
+    <div className="my-10">
+      <h1 className="text-6xl font-tangerine text-center text-primary">Shop</h1>
     </div>
   );
 }

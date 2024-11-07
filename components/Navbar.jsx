@@ -36,7 +36,7 @@ function Navbar() {
   return (
     <div
       className={`fixed top-0 z-50 text-neutral-500 w-full transition-all duration-300 ${
-        scrolled ? "bg-white shadow-md" : "bg-transparent"
+        scrolled ? "bg-white shadow-md" : "bg-white"
       }`}
     >
       <div className="navbar container mx-auto py-4 px-3">
@@ -76,40 +76,37 @@ function Navbar() {
               </li>
             </ul>
           </div>
-          <Link href="/" className="text-3xl">
-            LOGO
+          <Link href="/" className="text-3xl font-tangerine text-primary">
+            Indiespiral
           </Link>
         </div>
 
         {/* Desktop Menu */}
-        <div className="navbar-end">
+        <div className="navbar-center text-primary">
           {/* Navigation Links - Hidden on mobile */}
-          <div className="hidden md:flex gap-8 text-sm mr-4">
-            <Link
-              href="/"
-              className="text-neutral-800 font-medium hover:text-neutral-600"
-            >
+          <div className="hidden md:flex gap-8 text-xs mr-4">
+            <Link href="/" className="font-medium ">
               Home
             </Link>
-            <Link href="/about" className="hover:text-neutral-600">
+            <Link href="/about" className="">
               About
             </Link>
-            <Link href="/courses" className="hover:text-neutral-600">
+            <Link href="/courses" className="">
               Courses
             </Link>
-            <Link
-              href="/shop"
-              className="hover:text-neutral-600 whitespace-nowrap"
-            >
+            <Link href="/shop" className=" whitespace-nowrap">
               E-books & Prints
             </Link>
-            <Link href="/blogs" className="hover:text-neutral-600">
+            <Link href="/blogs" className="">
               Blogs
             </Link>
           </div>
 
           {/* Icons Section */}
-          {/* <div className="flex items-center gap-4">
+        </div>
+
+        <div className="navbar-end text-primary">
+          <div className="flex items-center gap-4">
             <button className="btn btn-ghost btn-circle">
               <Search className="h-5 w-5" />
             </button>
@@ -119,7 +116,7 @@ function Navbar() {
             <button className="btn btn-ghost btn-circle">
               <CircleUserRound className="h-5 w-5" />
             </button>
-          </div> */}
+          </div>
         </div>
       </div>
     </div>

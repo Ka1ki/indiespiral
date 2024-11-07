@@ -120,7 +120,7 @@ function Product() {
   const images = [...product.data.media];
 
   return (
-    <div className="min-h-screen pt-16">
+    <div className="min-h-screen">
       <div className="container mx-auto px-4 py-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="md:sticky md:top-24">
@@ -154,14 +154,14 @@ function Product() {
 
             <div className="flex gap-4">
               <button
-                className="flex-1 btn btn-primary"
+                className="flex-1 btn btn-primary text-white"
                 disabled={!variant}
                 onClick={handleAddToCart}
               >
                 {inCart ? "Go To Cart" : "Add To Cart"}
               </button>
               <button
-                className="flex-1 btn btn-outline btn-primary"
+                className="flex-1 btn btn-outline btn-primary text-white"
                 disabled={!variant}
                 onClick={handleAddToWishlist}
               >
@@ -205,10 +205,10 @@ function VariantSelector({ variants, filter, setFilter }) {
             {variant.values.map((value) => (
               <button
                 key={variant.name + value}
-                className={`px-4 py-2  ${
+                className={`px-4 py-2 border border-primary  ${
                   filter[variant.name] === value
                     ? "bg-primary text-white"
-                    : "bg-gray-100 hover:bg-gray-200"
+                    : "bg-transparent hover:bg-gray-200"
                 }`}
                 onClick={() => setFilter({ ...filter, [variant.name]: value })}
               >

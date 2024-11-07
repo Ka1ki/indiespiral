@@ -24,12 +24,6 @@ body {
   @apply text-neutral-600;
 }
 
-.contact-gradient {
-  background: rgb(40, 176, 161);
-  background: linear-gradient(
-    100deg,
-    rgba(40, 176, 161, 1) 0%,
-    rgba(80, 187, 182, 0.5312718837535014) 17%,
-    rgba(255, 255, 255, 1) 41%
-  );
+.newsletter-card {
+  background-image: url("/newsletter.jpg");
 }

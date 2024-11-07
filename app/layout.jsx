@@ -1,14 +1,24 @@
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
-import { Poppins } from "next/font/google";
+import { Montserrat, Tangerine, Syne } from "next/font/google";
 import "./globals.css";
 
-// const inter = Inter({ subsets: ["latin"] });
-const poppins = Poppins({
+const montserrat = Montserrat({
   subsets: ["latin"],
-  weight: ["300", "400", "400", "500"],
-  variable: "--font-poppins",
+  weight: ["300", "400", "500"],
+  variable: "--font-montserrat",
+});
+
+const tangerine = Tangerine({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-tangerine",
+});
+
+const syne = Syne({
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
+  variable: "--font-syne",
 });
 
 import Footer from "@/components/Footer";
@@ -24,7 +34,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" data-theme="corporate">
-      <body className={`${poppins.variable} font-sans bg-slate-100`}>
+      <body
+        className={`${montserrat.variable} ${tangerine.variable} ${syne.variable} font-sans bg-neutral-50`}
+      >
         <ToastContainer
           position="top-right"
           autoClose={5000}

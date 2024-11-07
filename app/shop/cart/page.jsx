@@ -79,7 +79,7 @@ export default function CartPage() {
   if (order.isLoading) return <Loading />;
 
   return (
-    <div className="min-h-screen bg-gray-50 py-16">
+    <div className="min-h-screen bg-gray-50">
       <LoadingOverlay isLoading={ordering} />
       <div className="container px-4 py-8 mx-auto max-w-7xl lg:py-12">
         <h1 className="mb-8 text-3xl font-bold text-gray-900">Shopping Cart</h1>
