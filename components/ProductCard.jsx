@@ -5,7 +5,7 @@ export default function ProductCard({ product }) {
 
   return (
     <Link href={`/shop/product/${_id}`}>
-      <div className="product-card group">
+      <div className="product-card group text-primary">
         <div className="aspect-[2/3] overflow-hidden">
           <div className="product-image relative">
             <img
@@ -20,17 +20,13 @@ export default function ProductCard({ product }) {
                 alt={name}
               />
             )}
-            <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white text-center py-2 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-              Quick Look
-            </div>
           </div>
         </div>
 
         <div className="body mt-3">
-          <h1 className="text-left text-lg font-medium">{name}</h1>
-          <div className="flex">
-            <p>Rs {price}/-</p>
-          </div>
+          <h1 className="text-left font-syne">
+            {name} - Rs {price}/-
+          </h1>
         </div>
       </div>
     </Link>
