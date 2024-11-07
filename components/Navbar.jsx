@@ -110,7 +110,10 @@ function Navbar() {
             <button className="btn btn-ghost btn-circle">
               <Search className="h-5 w-5" />
             </button>
-            <Link href="/cart" className="btn btn-ghost btn-circle indicator">
+            <Link
+              href="/shop/cart"
+              className="btn btn-ghost btn-circle indicator"
+            >
               <ShoppingBag className="h-5 w-5" />
             </Link>
             <Link href="/account" className="btn btn-ghost btn-circle">
