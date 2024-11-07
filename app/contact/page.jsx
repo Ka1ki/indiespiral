@@ -62,9 +62,7 @@ export default function ContactPage() {
                   </li>
                   <li className="flex items-center">
                     <Mail className="flex-shrink-0 mr-2" size={18} />
-                    <span className="break-all">
-                      info@inmylookingglasses.com
-                    </span>
+                    <span className="break-all">info@indiespiral.com</span>
                   </li>
                 </ul>
               </div>
