@@ -84,7 +84,7 @@ function Navbar() {
         {/* Desktop Menu */}
         <div className="navbar-center text-primary">
           {/* Navigation Links - Hidden on mobile */}
-          <div className="hidden md:flex gap-8 text-xs mr-4">
+          <div className="hidden md:flex gap-8 text-sm mr-4">
             <Link href="/" className="font-medium ">
               Home
             </Link>

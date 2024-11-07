@@ -2,9 +2,10 @@
 import queryString from "query-string";
 import useAccountStore from "@/stores/useAccountStore";
 const api =
-  process.env.NODE_ENV === "production"
-    ? process.env.NEXT_PUBLIC_API_URL
-    : "http://localhost:5007";
+  // process.env.NODE_ENV === "production"
+  // ?
+  process.env.NEXT_PUBLIC_API_URL;
+// : "http://localhost:5007";
 
 export type ApiResponse<T = any> = {
   code: number;
