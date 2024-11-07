@@ -124,7 +124,7 @@ export default function CartPage() {
 
               <button
                 onClick={completeOrder}
-                className="btn btn-primary w-full rounded-lg shadow-md h-14"
+                className="btn btn-primary w-full rounded-lg shadow h-14"
               >
                 Place Order
               </button>
