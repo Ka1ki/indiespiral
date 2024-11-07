@@ -9,9 +9,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["var(--font-montserrat)", "sans-serif"],
+        sans: ["var(--font-baskerville)", "sans-serif"],
         tangerine: ["var(--font-tangerine)", "cursive"],
-        syne: ["var(--font-syne)", "sans-serif"],
+        syne: ["var(--font-lato)", "sans-serif"],
       },
       colors: {
         navy: "#0D2159",

@@ -1,24 +1,18 @@
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { Montserrat, Tangerine, Syne } from "next/font/google";
+import { Lato, Baskervville } from "next/font/google";
 import "./globals.css";
 
-const montserrat = Montserrat({
+const lato = Lato({
   subsets: ["latin"],
-  weight: ["300", "400", "500"],
-  variable: "--font-montserrat",
+  weight: ["300", "400", "700", "900"],
+  variable: "--font-lato",
 });
 
-const tangerine = Tangerine({
+const baskerville = Baskervville({
   subsets: ["latin"],
-  weight: ["400", "700"],
-  variable: "--font-tangerine",
-});
-
-const syne = Syne({
-  subsets: ["latin"],
-  weight: ["400", "500", "600"],
-  variable: "--font-syne",
+  weight: ["400"],
+  variable: "--font-baskerville",
 });
 
 import Footer from "@/components/Footer";
@@ -36,7 +30,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" data-theme="corporate">
       <body
-        className={`${montserrat.variable} ${tangerine.variable} ${syne.variable} font-sans bg-neutral-100`}
+        className={`${lato.variable} ${baskerville.variable} font-sans bg-neutral-100`}
       >
         <ToastContainer
           position="top-right"

@@ -250,11 +250,13 @@ const Newsletter = () => {
         {/* Overlay */}
         <div className="absolute inset-0 bg-primary/20"></div>
         <div className="relative z-10">
-          <h1 className="text-3xl sm:text-5xl font-syne">
+          <h1 className="text-3xl sm:text-5xl font-syne mb-1">
             Signup For Our Newsletter
           </h1>
-          <p className="text-base sm:text-lg">Get 10% off your first order</p>
-          <div className="flex flex-col sm:flex-row gap-4 sm:gap-5 mt-4 sm:mt-5">
+          <p className="text-base sm:text-lg text-center">
+            Get 10% off your first order
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 sm:gap-5 mt-4 sm:mt-5 sm:justify-center">
             <input
               type="email"
               placeholder="Enter your email"
