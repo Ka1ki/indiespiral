@@ -66,13 +66,13 @@ function Navbar() {
                 <Link href="/about">About</Link>
               </li>
               <li>
-                <Link href="/courses">Courses</Link>
+                <Link href="/collection">Collection</Link>
               </li>
               <li>
-                <Link href="/shop">E-books & Prints</Link>
+                <Link href="/shop">Shop</Link>
               </li>
               <li>
-                <Link href="/blogs">Blogs</Link>
+                <Link href="/contact">Contact</Link>
               </li>
             </ul>
           </div>
